@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alebel - Full Stack Developer</title>
+    <meta name="description" content="Alebel - Full Stack Developer & Creative Problem Solver. Creating beautiful, functional, and user-centered digital experiences.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">ALEBEL</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" id="hero-title"></h1>
+                <h2 class="hero-subtitle" id="hero-subtitle"></h2>
+                <p class="hero-description" id="hero-description"></p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Works</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="porti.jpg" alt="Alebel Profile" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Place this at the end of a section, e.g., after the Hero section -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 100" width="100%" height="100" preserveAspectRatio="none">
+            <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="#f3f4f6"></path>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate developer with a love for creating meaningful digital experiences.
+                        With expertise in modern web technologies, I focus on building scalable applications
+                        that solve real-world problems.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing to
+                        open-source projects, or sharing knowledge with the developer community.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <a href="#about" class="stat" style="text-decoration: none; color: inherit;">
+                        <h3>1</h3>
+                        <p>Years Experience</p>
+                    </a>
+                    <a href="#projects" class="stat" style="text-decoration: none; color: inherit;">
+                        <h3>10+</h3>
+                        <p>Projects Completed</p>
+                    </a>
+                    <a href="#contact" class="stat" style="text-decoration: none; color: inherit;">
+                        <h3>10+</h3>
+                        <p>Happy Clients</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Next.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Material-UI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Next.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Language</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="https://github.com/Gondarian/Apple" target="_blank" rel="noopener" class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                    </a>
+                    <div class="project-content">
+                        <h3>Apple Website</h3>
+                        <p>A responsive, multi-section React application that visually replicates the Apple homepage. This project demonstrates modern front-end development practices, accessibility, and component-based architecture.</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem; color: #6b7280;">
+                            <li>Product showcase sections (Mac, iPhone, iPad, Watch, TV, Music, Support)</li>
+                            <li>Interactive navigation bar with accessible links and icons</li>
+                            <li>Responsive design for desktop and mobile devices</li>
+                            <li>Modular React component structure for easy maintenance and scalability</li>
+                            <li>Custom CSS for Apple-like styling</li>
+                            <li>Image assets and icons for a realistic look and feel</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Custom CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/Gondarian/public_health_survillance" target="_blank" rel="noopener" class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </a>
+                    <div class="project-content">
+                        <h3>Public Health Surveillance</h3>
+                        <p>A comprehensive platform for monitoring, analyzing, and visualizing public health data in real time. Enables early detection of outbreaks and supports data-driven decision making for health authorities.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>React</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/Gondarian/Netflix" target="_blank" rel="noopener" class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </a>
+                    <div class="project-content">
+                        <h3>Netflix Clone</h3>
+                        <p>A responsive Netflix-inspired web application featuring movie and TV show listings, built with API integration for real-time content updates and interactive user experience.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>API Integration</span>
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/Gondarian/amazon-website" target="_blank" rel="noopener" class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </a>
+                    <div class="project-content">
+                        <h3>Amazon Website</h3>
+                        <p>A feature-rich Amazon-inspired e-commerce website with product listings, shopping cart, and user authentication. Built for a seamless and interactive shopping experience.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/Gondarian/med-device-cmms" target="_blank" rel="noopener" class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </a>
+                    <div class="project-content">
+                        <h3>Computerized Maintenance Management System (CMMS)</h3>
+                        <p>A fullstack Computerized Maintenance Management System (CMMS) for medical devices. This application allows hospitals and clinics to manage equipment inventory, maintenance logs, and user roles with secure authentication and role-based access control.</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem; color: #6b7280;">
+                            <li>Equipment inventory management (CRUD)</li>
+                            <li>Maintenance log management (CRUD)</li>
+                            <li>User authentication (JWT) and role-based access (Admin, Technician, Viewer)</li>
+                            <li>Department and user management</li>
+                            <li>Responsive, professional UI (Material-UI)</li>
+                            <li>Secure backend (Express, MySQL)</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Material-UI</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just want to say hello.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alebelmelak10@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+251 91 606-25092</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Addis Ababa, Ethiopia</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Gondarian" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/AlebelMelak" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/alebel_melak" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/manjvgnl" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div class="form-message" style="margin-top:1rem;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alebel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const hamburgerBtn = document.querySelector('.hamburger');
+        const navMenuMobile = document.querySelector('.nav-menu');
+        if (hamburgerBtn && navMenuMobile) {
+            hamburgerBtn.addEventListener('click', () => {
+                navMenuMobile.classList.toggle('active');
+            });
+            // Keyboard accessibility
+            hamburgerBtn.tabIndex = 0;
+            hamburgerBtn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    navMenuMobile.classList.toggle('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
