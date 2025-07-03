@@ -162,14 +162,15 @@ border-radius: 5px;
 }
 
 .btn-primary {
-  background: #fbbf24;
+  background: transparent;
   color: #ffffff;
+  border: 2px solid;
 }
 
 .btn-primary:hover {
-  background: #f59e0b;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+  background: #1f2937;
+  color: #fff;
+
 }
 
 .btn-secondary {

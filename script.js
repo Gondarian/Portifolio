@@ -155,3 +155,16 @@ function revealSections() {
 }
 window.addEventListener('scroll', revealSections);
 window.addEventListener('DOMContentLoaded', revealSections);
+
+const hamburgerBtn = document.querySelector('.hamburger');
+const navMenuMobile = document.querySelector('.nav-menu');
+if (hamburgerBtn && navMenuMobile) {
+  hamburgerBtn.addEventListener('click', () => {
+    navMenuMobile.classList.toggle('active');
+  });
+  hamburgerBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      navMenuMobile.classList.toggle('active');
+    }
+  });
+}
