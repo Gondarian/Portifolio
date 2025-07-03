@@ -310,6 +310,36 @@ section.visible {
   font-weight: 500;
 }
 
+.about-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.8em;
+  position: relative;
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.about-content.expanded .about-description {
+  -webkit-line-clamp: unset;
+  max-height: none;
+  overflow: visible;
+}
+
+.about-more-btn {
+  background: none;
+  border: none;
+  color: #9333ea;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5em;
+  font-size: 1em;
+  padding: 0;
+}
+
 /* Skills Section */
 .skills {
   background: #f8fafc;
@@ -430,10 +460,31 @@ section.visible {
   color: #1f2937;
 }
 
-.project-content p {
-  color: #6b7280;
-  margin-bottom: 1rem;
-  line-height: 1.6;
+.project-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.8em;
+  position: relative;
+}
+
+.project-card.expanded .project-description {
+  -webkit-line-clamp: unset;
+  max-height: none;
+  overflow: visible;
+}
+
+.project-more-btn {
+  background: none;
+  border: none;
+  color: #9333ea;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5em;
+  font-size: 1em;
+  padding: 0;
 }
 
 .project-tech {
@@ -669,6 +720,30 @@ section.visible {
   .btn, .btn-primary, .btn-secondary {
     font-size: 0.9rem;
     padding: 10px 16px;
+  }
+  .project-description {
+    font-size: 0.98em;
+    max-height: 4.8em;
+    -webkit-line-clamp: 3;
+  }
+  .project-more-btn {
+    font-size: 1em;
+    padding: 0.5em 0;
+    margin-top: 0.2em;
+    width: 100%;
+    text-align: left;
+  }
+  .about-description {
+    font-size: 0.98em;
+    max-height: 4.8em;
+    -webkit-line-clamp: 3;
+  }
+  .about-more-btn {
+    font-size: 1em;
+    padding: 0.5em 0;
+    margin-top: 0.2em;
+    width: 100%;
+    text-align: left;
   }
 }
 

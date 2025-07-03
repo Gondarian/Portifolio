@@ -168,3 +168,20 @@ if (hamburgerBtn && navMenuMobile) {
     }
   });
 }
+
+document.querySelectorAll('.project-more-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const card = this.closest('.project-card');
+    card.classList.toggle('expanded');
+    this.textContent = card.classList.contains('expanded') ? 'Less' : 'More';
+  });
+});
+
+const aboutMoreBtn = document.querySelector('.about-more-btn');
+const aboutContent = document.querySelector('.about-content');
+if (aboutMoreBtn && aboutContent) {
+  aboutMoreBtn.addEventListener('click', function() {
+    aboutContent.classList.toggle('expanded');
+    this.textContent = aboutContent.classList.contains('expanded') ? 'Less' : 'More';
+  });
+}
