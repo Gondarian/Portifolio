@@ -25,13 +25,15 @@ body {
 
 /* Navigation */
 .navbar {
-  position: static;
-  margin-top: 0;
+  position: sticky;
   top: 0;
   z-index: 1000;
   background: #fff;
+  margin-top: 0;
   box-shadow: 0 2px 8px rgba(31,41,55,0.06);
   transition: box-shadow 0.3s;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .nav-container {
@@ -41,6 +43,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .nav-logo a {
@@ -626,6 +630,29 @@ section.visible {
     flex-direction: column;
     gap: 2rem;
   }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #f3f4f6;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    z-index: 100;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .nav-menu li:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .hamburger {
+    display: flex;
+  }
 }
 
 @media (max-width: 480px) {
@@ -702,20 +729,45 @@ section.visible {
   outline-offset: 2px;
 }
 
-/* Navbar hamburger for mobile */
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 1rem;
+  height: 32px;
+  justify-content: center;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #111;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
     flex-direction: column;
     background: #f3f4f6;
     position: absolute;
-    top: 60px;
+    top: 38px;
     right: 0;
     width: 100%;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     z-index: 100;
+    margin-top: 0;
+    padding-top: 0;
   }
   .nav-menu.active {
+    display: flex;
+  }
+  .nav-menu li:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .hamburger {
     display: flex;
   }
 }
