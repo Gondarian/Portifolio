@@ -163,6 +163,7 @@ border-radius: 5px;
   border: none;
   cursor: pointer;
   font-size: 1rem;
+
 }
 
 .btn-primary {
@@ -186,6 +187,17 @@ border-radius: 5px;
 .btn-secondary:hover {
   background: #1f2937;
   color: #fff;
+}
+
+.btn-send {
+  background: #93259d !important;
+  color: #fff !important;
+  border: none;
+}
+
+.btn-send:hover, .btn-send:focus {
+  background: #7c22c5 !important;
+  color: #fff !important;
 }
 
 .hero-image {
@@ -856,4 +868,109 @@ section.visible {
 a:focus, button:focus, .stat:focus, .project-card:focus, .skill-item:focus {
   outline: 2px solid #fbbf24;
   outline-offset: 2px;
+}
+
+.contact-flex {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-info {
+  flex: 1 1 320px;
+  min-width: 260px;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+.contact-form {
+  flex: 1 1 340px;
+  min-width: 260px;
+  max-width: 480px;
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contact-details {
+  margin: 1.5rem 0;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-bottom: 0.7em;
+  color: #4b5563;
+  font-size: 1.05em;
+}
+.contact-item i {
+  color: #9333ea;
+  font-size: 1.2em;
+}
+.social-links {
+  display: flex;
+  gap: 1.2em;
+  margin-top: 1.2em;
+}
+.social-link {
+  color: #9333ea;
+  font-size: 1.5em;
+  background: #f3f4f6;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.social-link:hover, .social-link:focus {
+  background: #9333ea;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(147,51,234,0.12);
+  outline: none;
+}
+.contact-btn {
+  width: 100%;
+  font-size: 1.1em;
+  padding: 0.9em 0;
+  border-radius: 8px;
+  margin-top: 0.5em;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+@media (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  .contact-info, .contact-form {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 1.2rem 0.5rem;
+    border-radius: 10px;
+  }
+  .contact-info {
+    padding: 0;
+  }
+  .social-link {
+    font-size: 1.2em;
+    width: 2em;
+    height: 2em;
+  }
 }
